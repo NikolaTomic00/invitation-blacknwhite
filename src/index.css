@@ -27,7 +27,7 @@ body {
   }
 
   .hero-names {
-    @apply font-display text-[26px] tracking-[0.08em] text-ink/70 sm:text-[31px];
+    @apply font-display text-[26px] tracking-[0.08em] text-ink sm:text-[31px];
   }
 
   .hero-love-row {
@@ -35,6 +35,8 @@ body {
   }
 
   .hero-vertical-text {
+    position: relative;
+    left: -0.75rem;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: "Brush Script MT", "Segoe Script", cursive;
@@ -264,6 +266,101 @@ body {
     75% {
       transform: translate(-50%, -50%) scale(1.06);
     }
+  }
+
+  .location-section {
+    display: grid;
+    min-height: 100svh;
+    place-items: start center;
+    border-bottom: 1px solid rgb(17 17 17 / 0.1);
+    background: #ffffff;
+    padding: clamp(42px, 8svh, 76px) clamp(18px, 5vw, 32px)
+      clamp(42px, 8svh, 76px);
+  }
+
+  .location-inner {
+    display: grid;
+    width: min(100%, 390px);
+    justify-items: center;
+    color: #111111;
+    text-align: center;
+  }
+
+  .location-title {
+    margin: 0;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(55px, 16vw, 78px);
+    font-weight: 400;
+    line-height: 0.88;
+  }
+
+  .location-copy {
+    display: grid;
+    gap: clamp(5px, 1.5vw, 8px);
+    margin-top: clamp(20px, 5.5vw, 30px);
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .location-copy p {
+    margin: 0;
+  }
+
+  .location-hotel {
+    font-size: clamp(24px, 6.6vw, 32px);
+    font-weight: 500;
+    line-height: 1.08;
+  }
+
+  .location-address {
+    font-size: clamp(17px, 4.6vw, 21px);
+    line-height: 1.22;
+  }
+
+  .location-visual-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: clamp(18px, 5vw, 28px);
+    width: 100%;
+    margin-top: clamp(30px, 7.5vw, 42px);
+  }
+
+  .location-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #111111;
+    display: block;
+  }
+
+  .location-vertical-text {
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(34px, 9.2vw, 42px);
+    line-height: 1;
+    color: rgb(17 17 17 / 0.75);
+    white-space: nowrap;
+  }
+
+  .location-map-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    margin-top: clamp(28px, 7vw, 40px);
+    padding: 0 26px;
+    background: #111111;
+    color: #ffffff;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
   .section-shell {
