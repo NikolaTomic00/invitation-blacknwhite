@@ -19,7 +19,7 @@ body {
 
 @layer components {
   .hero-section {
-    @apply flex min-h-screen items-start justify-center bg-white px-2 pb-10 pt-5 text-ink;
+    @apply flex items-start justify-center bg-white px-2 pb-5 pt-5 text-ink sm:min-h-screen sm:pb-10;
   }
 
   .hero-inner {
@@ -43,6 +43,105 @@ body {
 
   .hero-love-image {
     @apply w-[min(46vw,180px)] max-w-full object-contain sm:w-[min(84vw,340px)];
+  }
+
+  .details-section {
+    display: grid;
+    place-items: start center;
+    padding: clamp(8px, 2svh, 18px) clamp(8px, 2.5vw, 18px)
+      clamp(12px, 3svh, 24px);
+    background: #ffffff;
+  }
+
+  .details-shell {
+    width: min(100%, 430px);
+    padding: clamp(7px, 2vw, 10px);
+    background: #ffffff;
+  }
+
+  .details-card {
+    display: grid;
+    justify-items: center;
+    border: 2px solid #111111;
+    padding: clamp(22px, 5vw, 30px) clamp(20px, 5.6vw, 30px)
+      clamp(34px, 8vw, 48px);
+    color: #111111;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+
+  .details-ring {
+    width: 68px;
+    height: 68px;
+    margin-bottom: clamp(20px, 5vw, 28px);
+    background-image: url("/ring.png");
+    background-repeat: no-repeat;
+    background-position: -251px -10px;
+    background-size: 570px 804px;
+    filter: grayscale(1) contrast(1.45);
+  }
+
+  .details-card p {
+    margin: 0;
+  }
+
+  .details-intro {
+    max-width: 310px;
+    font-size: clamp(19px, 5.1vw, 24px);
+    font-weight: 500;
+    line-height: 1.28;
+  }
+
+  .details-date {
+    margin-top: clamp(20px, 5vw, 28px) !important;
+    font-size: clamp(19px, 5vw, 23px);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .details-times {
+    margin-top: clamp(17px, 4.5vw, 24px);
+    font-size: clamp(18px, 4.9vw, 23px);
+    font-weight: 500;
+    line-height: 1.22;
+  }
+
+  .details-location,
+  .details-closing,
+  .details-rsvp {
+    max-width: 310px;
+    font-size: clamp(18px, 4.9vw, 23px);
+    font-weight: 500;
+    line-height: 1.28;
+  }
+
+  .details-location {
+    margin-top: clamp(22px, 5.5vw, 30px) !important;
+  }
+
+  .details-closing {
+    margin-top: clamp(20px, 5vw, 28px) !important;
+  }
+
+  .details-families {
+    margin-top: clamp(18px, 4.6vw, 24px) !important;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(34px, 9vw, 48px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9;
+  }
+
+  .details-divider {
+    width: min(76%, 250px);
+    height: 1px;
+    margin-top: clamp(8px, 2.4vw, 12px);
+    background: #111111;
+    opacity: 0.72;
+  }
+
+  .details-rsvp {
+    margin-top: clamp(24px, 6vw, 32px) !important;
   }
 
   .section-shell {
