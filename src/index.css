@@ -38,7 +38,7 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: "Brush Script MT", "Segoe Script", cursive;
-    @apply shrink-0 text-[45px] leading-none text-ink/75 sm:text-[39px];
+    @apply shrink-0 text-[37px] leading-none text-ink/75 sm:text-[39px];
   }
 
   .hero-love-image {
@@ -148,6 +148,96 @@ body {
 
   .details-rsvp {
     margin-top: clamp(24px, 6vw, 32px) !important;
+  }
+
+  .calendar-section {
+    display: grid;
+    min-height: 100svh;
+    place-items: start center;
+    border-bottom: 1px solid rgb(17 17 17 / 0.1);
+    background: #ffffff;
+    padding: clamp(46px, 9svh, 82px) clamp(18px, 5vw, 32px)
+      clamp(42px, 8svh, 76px);
+  }
+
+  .calendar-inner {
+    display: grid;
+    width: min(100%, 390px);
+    justify-items: center;
+    color: #111111;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .calendar-month {
+    margin: 0;
+    font-family: "Bodoni 72", "Bodoni MT", Didot, "Playfair Display", Georgia,
+      serif;
+    font-size: clamp(55px, 16vw, 78px);
+    font-weight: 400;
+    line-height: 0.98;
+  }
+
+  .calendar-rule {
+    width: 100%;
+    height: 1px;
+    margin-top: clamp(34px, 8.5vw, 48px);
+    background: #111111;
+  }
+
+  .calendar-weekdays {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    margin-top: clamp(30px, 8vw, 44px);
+    font-size: clamp(20px, 5.5vw, 28px);
+    line-height: 1;
+    text-align: center;
+  }
+
+  .calendar-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    row-gap: clamp(18px, 5vw, 26px);
+    margin-top: clamp(33px, 8.5vw, 48px);
+    font-family: Inter, Arial, sans-serif;
+    font-size: clamp(21px, 5.7vw, 29px);
+    line-height: 1;
+    text-align: center;
+  }
+
+  .calendar-day {
+    position: relative;
+    display: grid;
+    min-height: 1.1em;
+    place-items: center;
+  }
+
+  .calendar-day.is-marked {
+    font-weight: 600;
+  }
+
+  .calendar-heart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    color: #111111;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.25em;
+    font-weight: 400;
+    line-height: 1;
+    transform: translate(-50%, -48%);
+  }
+
+  .calendar-day.is-marked {
+    z-index: 1;
+  }
+
+  .calendar-year {
+    margin: clamp(64px, 16vw, 92px) 0 0;
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1;
   }
 
   .section-shell {
