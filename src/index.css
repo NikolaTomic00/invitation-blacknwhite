@@ -389,7 +389,7 @@ body {
     width: 100%;
     align-items: start;
     justify-content: center;
-    gap: clamp(8px, 2.4vw, 14px);
+    gap: clamp(7px, 2vw, 12px);
     margin-top: clamp(34px, 8vw, 48px);
     font-family: "Times New Roman", Times, serif;
   }
@@ -402,14 +402,14 @@ body {
   }
 
   .countdown-value {
-    font-size: clamp(27px, 7.3vw, 39px);
+    font-size: clamp(34px, 9vw, 49px);
     line-height: 1;
     font-variant-numeric: tabular-nums;
   }
 
   .countdown-label {
     font-family: Inter, Arial, sans-serif;
-    font-size: clamp(9px, 2.5vw, 11px);
+    font-size: clamp(10px, 2.8vw, 13px);
     font-weight: 600;
     letter-spacing: 0.12em;
     line-height: 1;
@@ -418,7 +418,7 @@ body {
 
   .countdown-separator {
     margin-top: 0.02em;
-    font-size: clamp(27px, 7.3vw, 39px);
+    font-size: clamp(34px, 9vw, 49px);
     line-height: 1;
   }
 
@@ -433,7 +433,7 @@ body {
     place-items: start center;
     background: #ffffff;
     padding: clamp(16px, 3svh, 28px) clamp(18px, 5vw, 32px)
-      clamp(42px, 8svh, 70px);
+      clamp(14px, 3svh, 24px);
   }
 
   .rsvp-inner {
@@ -510,6 +510,21 @@ body {
   .rsvp-check-icon {
     width: 16px;
     height: 16px;
+  }
+
+  .footer-section {
+    width: min(100%, 430px);
+    margin: 0 auto;
+    padding: clamp(8px, 2svh, 16px) 24px clamp(30px, 6svh, 48px);
+    color: rgb(17 17 17 / 0.62);
+    font-family: Inter, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .footer-section p {
+    margin: 0;
   }
 
   .section-shell {

@@ -4,6 +4,7 @@ import HeroSection from "./sections/HeroSection.jsx";
 import InvitationTextSection from "./sections/InvitationTextSection.jsx";
 import LocationDetailsSection from "./sections/LocationDetailsSection.jsx";
 import RsvpSection from "./sections/RsvpSection.jsx";
+import FooterSection from "./sections/FooterSection.jsx";
 
 const sections = [
   { id: "hero", Component: HeroSection },
@@ -12,6 +13,7 @@ const sections = [
   { id: "location-details", Component: LocationDetailsSection },
   { id: "countdown", Component: CountdownSection },
   { id: "rsvp", Component: RsvpSection },
+  { id: "footer", Component: FooterSection },
 ];
 
 export default function App() {
