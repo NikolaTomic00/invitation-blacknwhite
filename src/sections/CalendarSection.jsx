@@ -55,8 +55,12 @@ export default function CalendarSection({ id }) {
             return (
               <span
                 key={`${day || "empty"}-${index}`}
-                className={isCelebrationDate ? "calendar-day is-marked" : "calendar-day"}
-                aria-label={isCelebrationDate ? "6. septembar 2026." : undefined}
+                className={
+                  isCelebrationDate ? "calendar-day is-marked" : "calendar-day"
+                }
+                aria-label={
+                  isCelebrationDate ? "6. septembar 2026." : undefined
+                }
               >
                 {isCelebrationDate ? (
                   <>
