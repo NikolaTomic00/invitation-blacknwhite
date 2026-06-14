@@ -38,7 +38,7 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: "Brush Script MT", "Segoe Script", cursive;
-    @apply shrink-0 text-[31px] leading-none text-ink/75 sm:text-[39px];
+    @apply shrink-0 text-[40px] leading-none text-ink/75 sm:text-[39px];
   }
 
   .hero-love-image {
