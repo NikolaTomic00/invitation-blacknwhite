@@ -154,12 +154,10 @@ body {
 
   .calendar-section {
     display: grid;
-    min-height: 100svh;
     place-items: start center;
-    border-bottom: 1px solid rgb(17 17 17 / 0.1);
     background: #ffffff;
     padding: clamp(46px, 9svh, 82px) clamp(18px, 5vw, 32px)
-      clamp(42px, 8svh, 76px);
+      clamp(22px, 5svh, 40px);
   }
 
   .calendar-inner {
@@ -361,6 +359,71 @@ body {
     line-height: 1;
     text-decoration: none;
     text-transform: uppercase;
+  }
+
+  .countdown-section {
+    display: grid;
+    min-height: 56svh;
+    place-items: start center;
+    border-bottom: 1px solid rgb(17 17 17 / 0.1);
+    background: #ffffff;
+    padding: clamp(44px, 8svh, 76px) clamp(16px, 4.5vw, 30px)
+      clamp(44px, 8svh, 76px);
+  }
+
+  .countdown-inner {
+    display: grid;
+    width: min(100%, 390px);
+    justify-items: center;
+    color: #111111;
+    text-align: center;
+  }
+
+  .countdown-title {
+    margin: 0;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(34px, 10vw, 50px);
+    font-weight: 400;
+    line-height: 0.95;
+    white-space: nowrap;
+  }
+
+  .countdown-row {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    gap: clamp(5px, 1.7vw, 9px);
+    margin-top: clamp(34px, 8vw, 48px);
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .countdown-item {
+    display: grid;
+    min-width: 0;
+    justify-items: center;
+    gap: 5px;
+  }
+
+  .countdown-value {
+    font-size: clamp(24px, 6.3vw, 34px);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .countdown-label {
+    font-family: Inter, Arial, sans-serif;
+    font-size: clamp(8px, 2.25vw, 10px);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .countdown-separator {
+    margin-top: 0.02em;
+    font-size: clamp(24px, 6.3vw, 34px);
+    line-height: 1;
   }
 
   .section-shell {
