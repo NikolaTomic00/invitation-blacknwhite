@@ -1,11 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Edwardian Script ITC";
+  src: url("/fonts/edwardianscriptitc.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bickham Script Pro";
+  src: url("/fonts/bickham-script-pro-semibold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
 :root {
-  --script-font: "Italianno", cursive;
+  --script-font:
+    "Edwardian Script ITC", "Bickham Script Pro", "Great Vibes", cursive;
   font-family: Inter, Arial, sans-serif;
   color: #111111;
   background: #fbfaf8;
