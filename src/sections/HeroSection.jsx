@@ -1,3 +1,5 @@
+import { assetPath } from "../lib/assetPath";
+
 export default function HeroSection({ id }) {
   return (
     <section id={id} className="hero-section">
@@ -8,7 +10,7 @@ export default function HeroSection({ id }) {
           <p className="hero-vertical-text">Love governs the world</p>
           <img
             className="hero-love-image"
-            src="/love-profile-cropped.png"
+            src={assetPath("love-profile-cropped.png")}
             alt="Love"
           />
         </div>
