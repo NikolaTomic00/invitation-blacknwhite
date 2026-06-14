@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -41,7 +41,7 @@ body {
     left: -0.75rem;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     @apply shrink-0 text-[37px] leading-none text-ink/75 sm:text-[39px];
   }
 
@@ -137,7 +137,7 @@ body {
   .details-families {
     max-width: 310px;
     margin-top: clamp(8px, 2.5vw, 12px) !important;
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     font-size: clamp(28px, 7.8vw, 38px);
     font-weight: 400;
     line-height: 1.05;
@@ -173,7 +173,7 @@ body {
 
   .calendar-month {
     margin: 0;
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     font-size: clamp(48px, 14vw, 68px);
     font-weight: 400;
     line-height: 0.85;
@@ -182,7 +182,7 @@ body {
 
   .calendar-year {
     margin: clamp(6px, 1.8vw, 10px) 0 0;
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     font-size: clamp(38px, 11vw, 54px);
     font-weight: 400;
     line-height: 0.9;
@@ -287,7 +287,7 @@ body {
 
   .location-title {
     margin: 0;
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     font-size: clamp(55px, 16vw, 78px);
     font-weight: 400;
     line-height: 0.88;
@@ -337,7 +337,7 @@ body {
     margin: 0;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     font-size: clamp(34px, 9.2vw, 42px);
     line-height: 1;
     color: rgb(17 17 17 / 0.75);
@@ -380,7 +380,7 @@ body {
 
   .countdown-title {
     margin: 0;
-    font-family: "Dancing Script", cursive;
+    font-family: "Italianno", cursive;
     font-size: clamp(39px, 11.3vw, 58px);
     font-weight: 400;
     line-height: 0.95;
