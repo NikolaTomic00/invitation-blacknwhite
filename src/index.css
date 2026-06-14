@@ -170,17 +170,25 @@ body {
 
   .calendar-month {
     margin: 0;
-    font-family: "Bodoni 72", "Bodoni MT", Didot, "Playfair Display", Georgia,
-      serif;
-    font-size: clamp(55px, 16vw, 78px);
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(48px, 14vw, 68px);
     font-weight: 400;
-    line-height: 0.98;
+    line-height: 0.85;
+    white-space: nowrap;
+  }
+
+  .calendar-year {
+    margin: clamp(6px, 1.8vw, 10px) 0 0;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(38px, 11vw, 54px);
+    font-weight: 400;
+    line-height: 0.9;
   }
 
   .calendar-rule {
     width: 100%;
     height: 1px;
-    margin-top: clamp(34px, 8.5vw, 48px);
+    margin-top: clamp(24px, 6vw, 36px);
     background: #111111;
   }
 
@@ -219,25 +227,43 @@ body {
 
   .calendar-heart {
     position: absolute;
-    left: 50%;
     top: 50%;
-    z-index: 0;
-    color: #111111;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 2.25em;
-    font-weight: 400;
-    line-height: 1;
-    transform: translate(-50%, -48%);
+    left: 50%;
+    width: 2.2em;
+    height: 2.2em;
+    fill: #c73632;
+    filter: drop-shadow(0 7px 10px rgba(53, 43, 30, 0.18));
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    animation: calendar-heartbeat 1.45s ease-in-out infinite;
   }
 
-  .calendar-day.is-marked {
+  .calendar-current-day {
+    position: relative;
     z-index: 1;
+    color: #fffaf2;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 3px rgba(53, 43, 30, 0.35);
   }
 
-  .calendar-year {
-    margin: clamp(64px, 16vw, 92px) 0 0;
-    font-size: clamp(34px, 9vw, 44px);
-    line-height: 1;
+  @keyframes calendar-heartbeat {
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    35% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    55% {
+      transform: translate(-50%, -50%) scale(0.98);
+    }
+
+    75% {
+      transform: translate(-50%, -50%) scale(1.06);
+    }
   }
 
   .section-shell {
