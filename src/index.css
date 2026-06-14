@@ -31,18 +31,18 @@ body {
   }
 
   .hero-love-row {
-    @apply mt-2 flex w-full -translate-x-4 items-center justify-center gap-2 sm:mt-3 sm:translate-x-0 sm:gap-0;
+    @apply mt-2 flex w-full items-center justify-start gap-2 pl-1 sm:mt-3 sm:justify-center sm:gap-0 sm:pl-0;
   }
 
   .hero-vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: "Brush Script MT", "Segoe Script", cursive;
-    @apply shrink-0 text-[31px] leading-none text-ink/75 sm:text-[39px];
+    @apply shrink-0 text-[34px] leading-none text-ink/75 sm:text-[39px];
   }
 
   .hero-love-image {
-    @apply w-[min(46vw,180px)] max-w-full object-contain sm:w-[min(84vw,340px)];
+    @apply w-[min(52vw,202px)] max-w-full object-contain sm:w-[min(84vw,340px)];
   }
 
   .details-section {
