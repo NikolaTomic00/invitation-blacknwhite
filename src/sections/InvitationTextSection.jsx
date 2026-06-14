@@ -5,28 +5,28 @@ export default function InvitationTextSection({ id }) {
         <div className="details-card">
           <span className="details-ring" aria-hidden="true" />
 
+          <p className="details-guests">DRAGI GOSTI</p>
+
           <p className="details-intro">
-            Sacuvajte dan za nas i budite deo nasih najlepsih uspomena.
+            Sa radošću vas pozivamo da prisustvujete našem građanskom venčanju.
           </p>
 
-          <p className="details-date">26. SEPTEMBAR 2026.</p>
+          <p className="details-date">06.09.2026.</p>
 
           <div className="details-times">
-            <p>13.00 h - crkveno vencanje</p>
-            <p>16.30 h - svecana proslava</p>
-            <p>17.30 h - gradjansko vencanje</p>
+            <p>Hotel “Podgorica”</p>
+            <p>Prijem gostiju od 17h do 17:45h</p>
+            <p>Svečana ceremonija 18h.</p>
           </div>
 
-          <p className="details-location">Svecana sala "Kristal", Pecinci</p>
+          <p className="details-closing">S POŠTOVANJEM,</p>
 
-          <p className="details-closing">Radosno vas ocekujemo,</p>
-
-          <p className="details-families">Martin i Alena</p>
+          <p className="details-families">porodice Kapičić i Petričević.</p>
 
           <span className="details-divider" aria-hidden="true" />
 
           <p className="details-rsvp">
-            Molimo vas da svoje prisustvo potvrdite do 15. septembra.
+            Molimo Vas da dolazak potvrdite do 15. avgusta 2026. godine.
           </p>
         </div>
       </div>

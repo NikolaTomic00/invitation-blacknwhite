@@ -2,10 +2,10 @@ export default function HeroSection({ id }) {
   return (
     <section id={id} className="hero-section">
       <div className="hero-inner">
-        <p className="hero-names">Martin &amp; Alena</p>
+        <p className="hero-names">Matea i Danilo</p>
 
         <div className="hero-love-row">
-          <p className="hero-vertical-text">Sačuvajte dan za nas</p>
+          <p className="hero-vertical-text">Love governs the world.</p>
           <img
             className="hero-love-image"
             src="/love-profile-cropped.png"
