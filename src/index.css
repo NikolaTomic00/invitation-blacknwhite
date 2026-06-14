@@ -19,7 +19,7 @@ body {
 
 @layer components {
   .hero-section {
-    @apply flex items-start justify-center bg-white px-2 pb-5 pt-5 text-ink sm:min-h-screen sm:pb-10;
+    @apply flex items-start justify-center bg-white px-2 pb-[48px] pt-5 text-ink sm:min-h-screen;
   }
 
   .hero-inner {
@@ -433,7 +433,7 @@ body {
     place-items: start center;
     background: #ffffff;
     padding: clamp(16px, 3svh, 28px) clamp(18px, 5vw, 32px)
-      clamp(14px, 3svh, 24px);
+      100px;
   }
 
   .rsvp-inner {
