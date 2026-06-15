@@ -1,5 +1,5 @@
 const rsvpUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdmWj9fsw7zgAPd_51eBlPMMvcSGrxClSnLJPzPWzSSJNHqAQ/viewform?usp=dialog";
+  "https://forms.gle/TVbEdWJnfEQ9wATL7";
 
 function CheckIcon() {
   return (
