@@ -22,7 +22,7 @@ function CheckIcon() {
 
 function RSVPButton({ children, href }) {
   return (
-    <a className="rsvp-button" href={href} target="_blank" rel="noreferrer">
+    <a className="rsvp-button" href={href}>
       <svg
         className="rsvp-button-border"
         viewBox="0 0 220 58"
