@@ -39,7 +39,7 @@ export default function CalendarSection({ id }) {
     <section id={id} className="calendar-section" aria-label="Kalendar">
       <div className="calendar-inner">
         <h2 className="calendar-month">Septembar</h2>
-        <p className="calendar-year">2026</p>
+        <p className="calendar-year">2026.</p>
         <span className="calendar-rule" aria-hidden="true" />
 
         <div className="calendar-weekdays" aria-hidden="true">

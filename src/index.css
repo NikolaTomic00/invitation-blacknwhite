@@ -461,8 +461,7 @@ body {
     display: grid;
     place-items: start center;
     background: #ffffff;
-    padding: clamp(16px, 3svh, 28px) clamp(18px, 5vw, 32px)
-      100px;
+    padding: clamp(16px, 3svh, 28px) clamp(18px, 5vw, 32px) 100px;
   }
 
   .rsvp-inner {
@@ -647,6 +646,7 @@ body {
 
     .footer-section {
       font-size: 10px;
+      padding-bottom: 2px;
     }
   }
 

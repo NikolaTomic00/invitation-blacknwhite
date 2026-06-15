@@ -20,8 +20,8 @@ export default function InvitationTextSection({ id }) {
 
           <div className="details-times">
             <p>Hotel “Podgorica”</p>
-            <p>Prijem gostiju od 17h do 17:45h</p>
-            <p>Svečana ceremonija u 18h</p>
+            <p>Prijem gostiju od 17h do 17:45h.</p>
+            <p>Svečana ceremonija u 18h.</p>
           </div>
 
           <p className="details-closing">Radosno vas očekujemo,</p>
