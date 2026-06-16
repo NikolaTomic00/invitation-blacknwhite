@@ -45,7 +45,7 @@ body {
 
 @layer components {
   .hero-section {
-    @apply flex items-start justify-center bg-white px-2 pb-[48px] pt-5 text-ink sm:min-h-screen;
+    @apply flex items-start justify-center bg-white px-2 pb-[48px] pt-5 text-ink sm:pb-8;
   }
 
   .hero-inner {
