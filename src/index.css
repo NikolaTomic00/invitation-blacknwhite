@@ -44,6 +44,27 @@ body {
 }
 
 @layer components {
+  .deactivated-page {
+    @apply grid min-h-screen place-items-center bg-white px-6 text-ink;
+  }
+
+  .deactivated-panel {
+    @apply grid max-w-[460px] justify-items-center text-center;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .deactivated-kicker {
+    @apply m-0 font-body text-xs font-semibold uppercase tracking-[0.22em] text-ink/55;
+  }
+
+  .deactivated-title {
+    @apply mb-0 mt-5 text-[28px] font-normal leading-tight sm:text-[36px];
+  }
+
+  .deactivated-copy {
+    @apply mb-0 mt-4 text-[18px] leading-relaxed text-ink/70 sm:text-[20px];
+  }
+
   .hero-section {
     @apply flex items-start justify-center bg-white px-2 pb-[48px] pt-5 text-ink sm:pb-8;
   }

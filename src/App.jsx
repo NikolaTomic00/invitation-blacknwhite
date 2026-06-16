@@ -16,7 +16,19 @@ const sections = [
   { id: "footer", Component: FooterSection },
 ];
 
+const APP_DEACTIVATED = true;
+
 export default function App() {
+  if (APP_DEACTIVATED) {
+    return (
+      <main className="deactivated-page">
+        <section className="deactivated-panel" aria-label="Unavailable page">
+          <h1 className="deactivated-title">Stranica nije dostupna. </h1>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen bg-paper text-ink">
       {sections.map(({ id, Component }) => (
